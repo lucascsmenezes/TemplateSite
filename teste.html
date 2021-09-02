@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+    <main>
+        <div>
+            <form>
+                <h2>Login</h2>
+                <input type="text" class="input-nome" placeholder="Digite seu Login">
+                <h2>Senha</h2>
+                <input type="password" class="input-senha" placeholder="Digite sua senha">
+                <button class="btn-env" onclick="entrar()">Entrar</button>
+            </form>
+        </div>
+    </main>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+        main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(180deg, rgba(0, 0, 151, 0.603), rgba(0, 162, 255, 0.514));
+        }
+        main > div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30em;
+            height: 30em;
+            border-radius: 15px;
+            border: 2px;
+            background-color: rgba(0, 15, 155, 0.322);
+        }
+        main > div > form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 25em;
+            height: 25em;
+        }
+        .input-nome{
+            padding-left: 5px;
+            font-size: 20px;
+            margin-top: 15px;
+            width: 300px;
+            height: 40px;
+            outline: 0;
+            font-weight: 600;
+        }
+        .input-senha{
+            padding-left: 5px;
+            font-size: 20px;
+            margin-top: 15px;
+            width: 300px;
+            height: 40px;
+            outline: 0;
+            font-weight: 600;
+        }
+        .btn-env{
+            margin-top: 50px;
+            width: 200px;
+            height: 40px;
+            background-color:rgba(0, 81, 255, 0.76);
+            cursor: pointer;
+            border: none;
+            border-radius: 15px;
+            font-size: 20px;
+            font-weight: 600;
+
+        }
+        .btn-env:hover{
+            color: white;
+            background-color: rgba(66, 124, 248, 0.76);
+
+        }
+        h2{
+            margin-top: 10px;
+            color: white;
+        }
+    </style>
+
+    <script>
+        function entrar(){
+            window.location.href('./testes.html/teste.html')
+        }
+    </script>
+</body>
+</html>

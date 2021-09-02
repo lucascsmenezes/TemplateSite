@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="./img/logo.png" alt="">
+        <nav>
+            <ul>
+                <li><a href="#imagem-um">Item1</a></li>
+                <li><a href="#">Item2</a></li>
+                <li><a href="#historia">Item3</a></li>
+                <li><a href="#img-dois">Item4</a></li>
+                <li><a href="#contato">Item5</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <button id="next" onclick="avancar()">></button>
+    <button id="back" onclick="voltar()"><</button>
+    <div class="carroussel">
+        <img id="imagem-um" src="https://gelkerribeiro.com.br/wp-content/uploads/2018/08/Casa_B_facahda_01-PS-1024x576.jpg" alt="img">
+    </div>
+
+    <section  id="historia" class="section-art">
+        <article class="art-um">
+            <h1>Historia</h1><br>
+            <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
+                Porque nós o usamos?
+                É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras, ao contrário de "Conteúdo aqui, conteúdo aqui", fazendo com que ele tenha uma aparência similar a de um texto legível. Muitos softwares de publicação e editores de páginas na internet agora usam Lorem Ipsum como texto-modelo padrão, e uma rápida busca por 'lorem ipsum' mostra vários websites ainda em sua fase de construção. Várias versões novas surgiram ao longo dos anos, eventualmente por acidente, e às vezes de propósito (injetando humor, e coisas do gênero).</p>
+        </article>
+        <article class="art-dois">
+            <h1>Arquitetura reformas</h1><br>
+            <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
+                Porque nós o usamos?
+                É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras, ao contrário de "Conteúdo aqui, conteúdo aqui", fazendo com que ele tenha uma aparência similar a de um texto legível. Muitos softwares de publicação e editores de páginas na internet agora usam Lorem Ipsum como texto-modelo padrão, e uma rápida busca por 'lorem ipsum' mostra vários websites ainda em sua fase de construção. Várias versões novas surgiram ao longo dos anos, eventualmente por acidente, e às vezes de propósito (injetando humor, e coisas do gênero).</p>
+        </article>
+    </section>
+    
+    <div class="card">
+        <img id="img-dois" src="https://www.hostinger.com.br/tutoriais/wp-content/uploads/sites/12/2020/08/Linktree-O-Que-e-e-Como-Usar-a-Ferramenta-de-Links-Para-Instagram-1024x591.png" alt="">
+    </div>
+
+    <form class="box-contato" id="contato">
+        <h1>Mande sua sugestão</h1>
+        <input type="text" id="input-nome" placeholder="Digite seu Nome">
+        <input type="text" id="input-tel" placeholder="Digite seu telefone">
+        <textarea id="input-texto" cols="30" rows="10"></textarea>
+        <button id="btn-env">Enviar</button>
+    </form>
+
+    <footer id="footer">
+        <p>Template para teste</p>
+    </footer>
+    
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            height: 100vh;
+            font-family: sans-serif;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+        }
+        header{
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 100%;
+            height: 90px;
+            background: linear-gradient(to left, rgb(116, 116, 116), rgba(141, 141, 141, 0.39));
+            box-shadow: 0.5px 0.5px 2px 2px;
+        }
+        header nav{
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 350px;
+            height: 50px;
+            border-radius: 15px;
+            background-color: rgb(184, 212, 236);
+        }
+        header nav ul li{
+            padding-left: 15px;
+            display: inline-block;
+        }
+        header nav ul li a{
+            font-size: 1em;
+            font-weight: 600;
+            text-decoration: none;
+            color: white;
+        }
+        header nav ul li a:hover{
+            color: rgb(150, 189, 223);
+            transition: 0.25s;
+        }
+        div.box-logo{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 300px;
+            height: 100px;
+        }
+        #logo{
+            position: absolute;
+            right: 1000px;
+            width: 300px;
+            height: 100px;
+            cursor: pointer;
+        }
+        div.carrousel{
+            display: flex;
+            width: 100%;
+            height: 400px;
+        }
+        #next{
+            position: absolute;
+            top: 450px;
+            left: 1160px;
+            width: 60px;
+            height: 60px;
+            border: none;
+            border-radius: 50%;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        #next:hover{
+            background: linear-gradient(60deg, blue, rgba(50, 176, 248, 0.562));
+            color: white;
+            transition: 0.25s;
+        }
+        #back{
+            position: absolute;
+            top: 450px;
+            left: 100px;
+            width: 60px;
+            height: 60px;
+            border: none;
+            border-radius: 50%;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        #back:hover{
+            background: linear-gradient(60deg, blue, rgb(50, 175, 248, 0.562));
+            color: white;
+            transition: 0.25s;
+        }
+        #imagem-um{
+            width: 100%;
+            object-fit: cover;
+
+        }
+        .section-art{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 500px;
+            padding: 10px;
+            gap: 20px;
+            background-color: rgba(221, 197, 144, 0.445);
+        }
+        .art-um{
+            text-align: justify;
+        }
+        .art-dois{
+            text-align: justify;
+        }
+        .card{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 700px;
+            padding: 10px;
+
+        }
+        #img-dois{
+            object-fit: cover;
+            width: 100%;
+            height: 700px;
+        }
+        .box-contato{
+            display: grid;
+            grid-template-rows: 50px 50px 50px;
+            justify-content: center;
+            width: 100%;
+            height: 500px;
+            background-color: antiquewhite;
+        }
+        #input-nome{
+            width: 200px;
+            height: 30px;
+        }
+        #input-tel{
+            width: 200px;
+            height: 30px;
+        }
+        #input-texto{
+            width: 400px;
+            max-width: 300px;
+            max-height: 300px;
+        }
+        #btn-env{
+            width: 100px;
+            height: 30px;
+        }
+        footer{
+            display: flex;
+            width: 100%;
+            height: 80px;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+        }
+        footer p{
+            font-size: 20px;
+            font-weight: 600;
+            color: white;
+        }
+    </style>
+
+    <script>
+        function avancar(){
+        var ordemC = [
+        "https://gelkerribeiro.com.br/wp-content/uploads/2018/08/Casa_B_facahda_01-PS-1024x576.jpg",
+        "https://images2.alphacoders.com/506/506335.png",
+        "https://www.galeriadaarquitetura.com.br/Img/projeto/702x415/3295/casa-madeira183.jpg"
+        ]
+        var img = document.querySelector('#imagem-um');
+        var img_src = img.src;
+        var img_id = ordemC.indexOf(img_src);
+        img.src = ordemC[img_id < -1 ? 0 : img_id  +1];
+        console.log(img_id);
+        }
+
+        function voltar(){
+        var ordemD = [
+        "https://www.galeriadaarquitetura.com.br/Img/projeto/702x415/3295/casa-madeira183.jpg",
+        "https://images2.alphacoders.com/506/506335.png",
+        "https://gelkerribeiro.com.br/wp-content/uploads/2018/08/Casa_B_facahda_01-PS-1024x576.jpg"
+        ]; 
+        var img = document.querySelector('#imagem-um');
+        var img_src = img.src;
+        var img_idX = ordemD.indexOf(img.src);
+        img.src = ordemD[img_idX <= -1 ? 0 : img_idX +1];
+        }        
+    </script>
+</body>
+</html>
